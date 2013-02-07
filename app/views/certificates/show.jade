@@ -1,0 +1,10 @@
+extends ../layouts/default
+block content	
+	ul.thumbnails
+		li.span4
+			.thumbnail
+				.dImage					
+					img(src="data:image/png;base64,#{certificate.activeImage}")
+					img(src="data:image/png;base64,#{certificate.inactiveImage}")
+				a(href='/certificate/show/#{certificate.id}') #{certificate.Name}
+				

@@ -1,0 +1,16 @@
+extends ../layouts/default
+block content
+	form(method='post', enctype="multipart/form-data", action='/certificates/create',class='form-horizontal')
+		.control-group
+			label(class='control-label') Active Image
+			.controls
+				input(type='file',name='activeImage')
+		.control-group
+			label(class='control-label') Inactive Image
+			.controls
+				input(type='file',name='inactiveImage')
+		.control-group
+			label(class='control-label') Certificate Name
+			.controls
+				input(type='text',id='name')		
+		input(type='submit',class="btn") Submit
