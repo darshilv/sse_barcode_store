@@ -56,11 +56,11 @@ function bootApplication(app, config, passport) {
     app.use(express.methodOverride())
 
     app.use(express.session({
-      secret: 'noobjs',
-      store: new mongoStore({
+      secret: 'ssebarcode',
+      /*store: new mongoStore({
         url: config.db,
         collection : 'sessions'
-      })
+      })*/
     }))
 
     //app.use(passport.initialize())
