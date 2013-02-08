@@ -1,9 +1,9 @@
 module.exports = {
     development: {      
-      db: 'mongodb://darshil:salesforce1@linus.mongohq.com:10069/app11693222',
+      db: '',
       forcedotcom: {
-          clientID : "3MVG9rFJvQRVOvk5fw9B29RZ6Bb3.tyIoXO4MKmLW5X1y5aHYvIx5a5t5DTEcVXLy2pmoQot4I3TqqzehRHzG"
-        , clientSecret: "5737018970257457888"
+          clientID : ""
+        , clientSecret: ""
         , callbackURL: "http://localhost:3001/auth/forcedotcom/callback"
       },
       dbdotcom: {
