@@ -15,7 +15,7 @@ module.exports = function (app, passport) {
       environment: 'production'
     });
 
-  org.authenticate({ username: 'ksumner@wm_ignite.demo', password: 'salesforce1'}, function(err, resp){
+  org.authenticate({ username: '', password: ''}, function(err, resp){
     if(!err) {
       oauth = resp;
       console.log(oauth);
